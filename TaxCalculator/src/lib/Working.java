@@ -40,6 +40,6 @@ public class Working extends Employee{
 			monthWorkingInYear = 12;
 		}
 		
-		return TaxFunction.calculateTax(monthlySalary, otherMonthlyIncome, monthWorkingInYear, annualDeductible, spouseIdNumber.equals(""), childIdNumbers.size()); 
+		return TaxFunction.calculateTax(salary, monthWorkingInYear, spouse, super.getSizeChild());    
 	}
 }
