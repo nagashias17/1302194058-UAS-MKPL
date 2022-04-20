@@ -10,12 +10,18 @@ public class Salary extends Employee {
 
     public Salary (Employee employee, int monthlySalary, int otherMonthlyIncome, int annualDeductible){
 
-        super();
+        super(
+			 	employee.getEmployeeId(),
+                employee.getFirstName(),
+                employee.getLastName(),
+                employee.getIdNumber(),
+                employee.getAddress(),
+                employee.isForeigner(),
+                employee.getGender()
+		);
 		this.monthlySalary = otherMonthlyIncome;
 		this.otherMonthlyIncome = otherMonthlyIncome;
 		this.annualDeductible - annualDeductible;
-
-
     }
 
     /**
@@ -26,22 +32,22 @@ public class Salary extends Employee {
 	public void setMonthlySalary(int grade) {	
 		if (grade == 1) {
 			monthlySalary = 3000000;
-			if (isForeigner) {
-				monthlySalary = (int) (3000000 * 1.5);
-			}
+			calculateIsForeigner(monthlySalary);
 		}else if (grade == 2) {
 			monthlySalary = 5000000;
-			if (isForeigner) {
-				monthlySalary = (int) (3000000 * 1.5);
-			}
+			calculateIsForeigner(monthlySalary);
 		}else if (grade == 3) {
 			monthlySalary = 7000000;
-			if (isForeigner) {
-				monthlySalary = (int) (3000000 * 1.5);
-			}
+			calculateIsForeigner(monthlySalary);
 		}
 	}
-    	
+
+	public void CalIsForeigner(int monthlySalary){
+        if (super.isForeigner()) {
+            monthlySalary = (int) (monthlySalary + (monthlySalary * 1.5));
+        }
+    }
+			
 	public void setAnnualDeductible(int deductible) {	
 		this.annualDeductible = deductible;
 	}
@@ -49,4 +55,16 @@ public class Salary extends Employee {
 	public void setAdditionalIncome(int income) {	
 		this.otherMonthlyIncome = income;
 	}
+
+	public int getMonthlySalary() {
+        return monthlySalary;
+    }
+
+    public int getOtherMonthlyIncome() {
+        return otherMonthlyIncome;
+    }
+
+    public int getAnnualDeductible() {
+        return annualDeductible;
+    }
 }

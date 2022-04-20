@@ -23,7 +23,9 @@ public class Employee {
 	}
 
 	private Gender gender;
+	public List<Child> child;
 	
+
 	public enum Gender {
 		Laki_Laki,
 		Perempuan,
@@ -39,4 +41,62 @@ public class Employee {
 		this.idNumber = idNumber;
 		this.address = address;
 		this.gender = gender;
-	
+
+		child = new LinkedList<Child>();
+	}
+
+	public void setEmployeeId(String employeeId) {
+		this.employeeId = employeeId;
+	}
+
+	public String getEmployeeId() {
+		return employeeId;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setIdNumber(String idNumber) {
+		this.idNumber = idNumber;
+	}
+
+	public String getIdNumber() {
+		return idNumber;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+	public boolean isForeigner() {
+		return isForeigner;
+	}
+
+	public Gender getGender() {
+		return gender;
+	}
+
+	public int getSizeChild(){
+		return child.size();
+	}
+
+    public void addChild(String childName, String childIdNumber) {
+		child.add(new Child(childName,childIdNumber));
+	}
+}

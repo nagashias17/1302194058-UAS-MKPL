@@ -7,7 +7,15 @@ public class Spouse extends Employee {
 	private String spouseIdNumber;
 
     public Spouse (Employee employee, String spouseName, String spouseIdNumber) {
-        super ();
+        super (
+                employee.getEmployeeId(),
+                employee.getFirstName(),
+                employee.getLastName(),
+                employee.getIdNumber(),
+                employee.getAddress(),
+                employee.isForeigner(),
+                employee.getGender()
+                );
         this.spouseName = spouseName;
         this.spouseIdNumber = spouseIdNumber;
     }
@@ -16,5 +24,12 @@ public class Spouse extends Employee {
 		this.spouseName = spouseName;
 		this.spouseIdNumber = idNumber;
 	}
-    	
+    
+    public String getSpouseName() {
+        return spouseName;
+    }
+
+    public String getSpouseIdNumber() {
+        return spouseIdNumber;
+    }
 }
