@@ -11,7 +11,7 @@ public class Salary extends Employee {
     public Salary (Employee employee, int monthlySalary, int otherMonthlyIncome, int annualDeductible){
 
         super(
-			 	employee.getEmployeeId(),
+		employee.getEmployeeId(),
                 employee.getFirstName(),
                 employee.getLastName(),
                 employee.getIdNumber(),
@@ -60,11 +60,11 @@ public class Salary extends Employee {
         return monthlySalary;
     }
 
-    public int getOtherMonthlyIncome() {
+    	public int getOtherMonthlyIncome() {
         return otherMonthlyIncome;
     }
 
-    public int getAnnualDeductible() {
+   	public int getAnnualDeductible() {
         return annualDeductible;
     }
 }
