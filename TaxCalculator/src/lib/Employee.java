@@ -39,6 +39,4 @@ public class Employee {
 		this.idNumber = idNumber;
 		this.address = address;
 		this.gender = gender;
-		
-	}
-}
+	
