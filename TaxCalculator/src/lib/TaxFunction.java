@@ -15,6 +15,7 @@ public class TaxFunction {
 	 */
 	
 	
+
 public static int calculateTax(Salary salary, int numberOfMonthWorking, Spouse spouse, int numberOfChildren) {
 		int tax = 0;
 		
@@ -38,4 +39,6 @@ public static int calculateTax(Salary salary, int numberOfMonthWorking, Spouse s
 			return tax;
 		}
 	}
+
+
 }
