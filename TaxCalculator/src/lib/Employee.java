@@ -24,16 +24,7 @@ public class Employee {
 
 	private Gender gender;
 	public List<Child> child;
-	
-
-	public enum Gender {
-		Laki_Laki,
-		Perempuan,
-	}
-
-	private Gender gender;
-
-	
+		
 	public Employee(String employeeId, String firstName, String lastName, String idNumber, String address, boolean isForeigner, boolean gender) {
 		this.employeeId = employeeId;
 		this.firstName = firstName;
