@@ -15,7 +15,7 @@ public class Working extends Employee{
     public Working (Employee employee, Salary salary, Spouse spouse, int yearJoined, int monthJoined, int dayJoined, int monthWorkingInYear){
           
           super(
-			   	employee.getEmployeeId(),
+			   	      employee.getEmployeeId(),
                 employee.getFirstName(),
                 employee.getLastName(),
                 employee.getIdNumber(),
@@ -40,6 +40,6 @@ public class Working extends Employee{
 			monthWorkingInYear = 12;
 		}
 		
-		return TaxFunction.calculateTax(salary, monthWorkingInYear, spouse, super.getSizeChild());
+		return TaxFunction.calculateTax(salary, monthWorkingInYear, spouse, super.getSizeChild());    
 	}
 }

@@ -22,8 +22,6 @@ public class Salary extends Employee {
 		this.monthlySalary = otherMonthlyIncome;
 		this.otherMonthlyIncome = otherMonthlyIncome;
 		this.annualDeductible - annualDeductible;
-
-
     }
 
     /**
@@ -49,7 +47,7 @@ public class Salary extends Employee {
             monthlySalary = (int) (monthlySalary + (monthlySalary * 1.5));
         }
     }
-    	
+			
 	public void setAnnualDeductible(int deductible) {	
 		this.annualDeductible = deductible;
 	}

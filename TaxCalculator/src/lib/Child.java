@@ -5,7 +5,6 @@ public class Child {
     //data Child
 	private String childNames;
 	private String childIdNumbers;
-	
 
     public Child (String childNames, String childIdNumbers){
         this.childNames = childNames;
