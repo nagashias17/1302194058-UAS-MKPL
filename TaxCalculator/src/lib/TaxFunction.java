@@ -15,7 +15,7 @@ public class TaxFunction {
 	 */
 	
 	
-public static int calculateTax(Salary salary, int numberOfMonthWorking, Spouse spouse, int numberOfChildren) {
+public static int calculateTax(Salary salary, int numberOfMonthWorking, int numberOfChildren) {
 		int tax = 0;
 		
 		if (numberOfMonthWorking > 12) {
@@ -27,7 +27,7 @@ public static int calculateTax(Salary salary, int numberOfMonthWorking, Spouse s
 		}
 		
 		if (isMarried) {
-			(int) Math.round(0.05 * ((salary.getMonthlySalary() + salary.getOtherMonthlyIncome()) * numberOfMonthWorking) - salary.getAnnualDeductible() - (54000000 + 4500000 + (numberOfChildren * 1500000)));
+			tax = (int) Math.round(0.05 * ((salary.getMonthlySalary() + salary.getOtherMonthlyIncome()) * numberOfMonthWorking) - salary.getAnnualDeductible() - (54000000 + 4500000 + (numberOfChildren * 1500000)));
 		}else {
 			tax = (int) Math.round(0.05 * ((salary.getMonthlySalary() + salary.getOtherMonthlyIncome()) * numberOfMonthWorking) - salary.getAnnualDeductible() - 54000000);
 		}
