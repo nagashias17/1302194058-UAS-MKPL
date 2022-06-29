@@ -5,10 +5,10 @@ public class Salary extends Employee {
     //data Salary
 	private int monthlySalary;
 	private int otherMonthlyIncome;
-	private int annualDeductible;
+	private String annualDeductible;
 
 
-    public Salary (Employee employee, int monthlySalary, int otherMonthlyIncome, int annualDeductible){
+    public Salary (Employee employee, int monthlySalary, int otherMonthlyIncome, String annualDeductible){
 
         super(
 		employee.getEmployeeId(),
