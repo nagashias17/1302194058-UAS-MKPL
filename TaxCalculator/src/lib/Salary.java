@@ -41,7 +41,6 @@ public class Salary extends Employee {
 			calculateIsForeigner(monthlySalary);
 		}
 	}
-
 	public void CalIsForeigner(int monthlySalary){
         if (super.isForeigner()) {
             monthlySalary = (int) (monthlySalary + (monthlySalary * 1.5));
