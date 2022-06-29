@@ -66,5 +66,6 @@ public class Salary extends Employee {
 
    	public int getAnnualDeductible() {
         return annualDeductible;
+		
     }
 }
