@@ -11,6 +11,7 @@ public class Working extends Employee{
 	private int monthWorkingInYear;
 	Salary salary;
 	Spouse spouse;
+	
 
     public Working (Employee employee, Salary salary, Spouse spouse, int yearJoined, int monthJoined, int dayJoined, int monthWorkingInYear){
           
