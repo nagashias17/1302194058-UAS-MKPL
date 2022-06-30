@@ -7,8 +7,23 @@ public class Salary extends Employee {
 	private int otherMonthlyIncome;
 	private String annualDeductible;
 
-
     public Salary (Employee employee, int monthlySalary, int otherMonthlyIncome, String annualDeductible){
+
+        super(
+		employee.getEmployeeId(),
+                employee.getFirstName(),
+                employee.getLastName(),
+                employee.getIdNumber(),
+                employee.getAddress(),
+                employee.isForeigner(),
+                employee.getGender()
+		);
+		this.monthlySalary = otherMonthlyIncome;
+		this.otherMonthlyIncome = otherMonthlyIncome;
+		this.annualDeductible - annualDeductible;
+    }
+
+	public Salary (Employee employee, int monthlySalary, int otherMonthlyIncome, String annualDeductible){
 
         super(
 		employee.getEmployeeId(),
