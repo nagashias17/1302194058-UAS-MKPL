@@ -5,7 +5,7 @@ public class Salary extends Employee {
     //data Salary
 	private int monthlySalary;
 	private int otherMonthlyIncome;
-	private String annualDeductible;
+	private String, annualDeductible;
 
 
     public Salary (Employee employee, int monthlySalary, int otherMonthlyIncome, String annualDeductible){
