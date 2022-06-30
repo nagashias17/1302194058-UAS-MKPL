@@ -23,6 +23,22 @@ public class Salary extends Employee {
 		this.otherMonthlyIncome = otherMonthlyIncome;
 		this.annualDeductible - annualDeductible;
     }
+	
+	    public Salary (Employee employee, int monthlySalary, int otherMonthlyIncome, String annualDeductible){
+
+        super(
+		employee.getEmployeeId(),
+                employee.getFirstName(),
+                employee.getLastName(),
+                employee.getIdNumber(),
+                employee.getAddress(),
+                employee.isForeigner(),
+                employee.getGender()
+		);
+		this.monthlySalary = otherMonthlyIncome;
+		this.otherMonthlyIncome = otherMonthlyIncome;
+		this.annualDeductible - annualDeductible;
+    }
 
     /**
 	 * Fungsi untuk menentukan gaji bulanan pegawai berdasarkan grade kepegawaiannya (grade 1: 3.000.000 per bulan, grade 2: 5.000.000 per bulan, grade 3: 7.000.000 per bulan)
