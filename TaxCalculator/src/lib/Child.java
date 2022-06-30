@@ -10,6 +10,10 @@ public class Child {
         this.childNames = childNames;
         this.childIdNumbers = childIdNumbers;
     }
+	public Child (String childNames, String childIdNumbers){
+        this.childNames = childNames;
+        this.childIdNumbers = childIdNumbers;
+    }
 
 	    public String getChildNames() {
         return childNames;
