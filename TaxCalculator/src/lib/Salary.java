@@ -8,6 +8,7 @@ public class Salary extends Employee {
 	private int annualDeductible;
 	
 	
+	
 
     public Salary (Employee employee, int monthlySalary, int otherMonthlyIncome, String annualDeductible){
 
