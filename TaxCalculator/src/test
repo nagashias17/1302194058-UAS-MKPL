@@ -1,0 +1,14 @@
+package src.test.java;
+
+import src.lib.Spouse.java;
+import static org.junit.Assert.*;
+import org.junit.Test;
+
+public class SpouseTest {
+
+	@Test
+	public void testSpouse() {
+		Spouse testspouse = new Spouse();
+ 
+    assertEquals(testspouse. getSpouseName(), nagashi);
+ }
