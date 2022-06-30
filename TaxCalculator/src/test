@@ -10,6 +10,6 @@ public class SpouseTest {
 	public void testSpouse() {
 		Spouse testspouse = new Spouse();
  
-    	assertEquals(testspouse. getSpouseName(), nagashi);
+    	assertEquals(testspouse. getSpouseName(), gamma);
 	}
  }
