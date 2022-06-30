@@ -19,6 +19,12 @@ public static int calculateTax(Salary salary, int numberOfMonthWorking, Spouse s
 		int tax = 0;
 		
 		if (numberOfMonthWorking > 12) {
+			if (numberOfMonthWorking > 12) {
+				System.err.println("More than 12 month working per year");
+				if (numberOfMonthWorking > 12) {
+					System.err.println("More than 12 month working per year");
+				}
+			}
 			System.err.println("More than 12 month working per year");
 		}
 		
