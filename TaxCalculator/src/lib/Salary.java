@@ -7,7 +7,7 @@ public class Salary extends Employee {
 	private int otherMonthlyIncome;
 	private int annualDeductible;
 
-
+ 
     public Salary (Employee employee, int monthlySalary, int otherMonthlyIncome, String annualDeductible){
 
         super(
